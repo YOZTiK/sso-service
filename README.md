@@ -124,7 +124,7 @@ Mira [GService Documentation](https://cloud.google.com/resource-manager/docs/cre
 
 Puede que tras ejecutar el comando anterior se te muestre un mensaje como este:
 
-![gAuth permission](https://lh5.googleusercontent.com/pcQr7q-YanHZVA7-kBJu8W-Yk0A51dMQvLvFbPtdM8_N2nL0lAXUZr8hVhOqGUxi-bMzqVGHA76rjmlWyLmj=w1600-h756-rw)
+![gAuth permission](https://drive.google.com/file/d/1v-t-73rjJrM95rD2MwJ7SfBlqzYHi6SC/view)
 
 O que en la consola se te muestre algo como:
 ```
