@@ -122,15 +122,79 @@ gcloud builds submit --tag gcr.io/<project-id>/sso-service
 _Para encontrar el project ID deberás ingresar a la información de de tu proyecto desde el dashboard de google console.
 Mira [GService Documentation](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects) para conocer en dónde encontrar esta información._
 
-Después de haber ejecutado el comando anterior debeás iniciar con el despliegue ejecutando:
+Puede que tras ejecutar el comando anterior se te muestre un mensaje como este:
+
+![gAuth permission](https://lh5.googleusercontent.com/pcQr7q-YanHZVA7-kBJu8W-Yk0A51dMQvLvFbPtdM8_N2nL0lAXUZr8hVhOqGUxi-bMzqVGHA76rjmlWyLmj=w1600-h756-rw)
+
+O que en la consola se te muestre algo como:
+```
+API [cloudbuild.googleapis.com] not enabled on project [<#Project>].
+ Would you like to enable and retry (this will take a few minutes)?
+(y/N)?
+```
+Dependiendo del caso presiona Autorizar o ingresa "y" para continuar.
+
+Después de haber ejecutado el comando anterior deberás iniciar con el despliegue ejecutando:
 
 ```
 gcloud run deploy --image gcr.io/<project-id>/sso-service --platform managed
 ```
 
-Tras ejecutar el comando te parecerán algunas opciones en la consola:
+Tras ejecutar el comando anterior se te pedira que ingreses el nombre del servicio en la consola:
 
+```
+Service name (sso-service): 
+```
 
+Puedes ingresar el mismo nombre de "sso-service" o cambiarlo. Tras haber elegido un nombre presiona enter para continuar
+
+Tras ejecutar el comando te parecerán algunas opciones en la consola. Te recomendamos elegir una dependiendo de la cercanía a la que te encuentres del centro de datos de Google:
+```
+Please specify a region:
+ [1] asia-east1
+ [2] asia-east2
+ [3] asia-northeast1
+ [4] asia-northeast2
+ [5] asia-northeast3
+ [6] asia-south1
+ [7] asia-southeast1
+ [8] asia-southeast2
+ [9] australia-southeast1
+ [10] europe-north1
+ [11] europe-west1
+ [12] europe-west2
+ [13] europe-west3
+ [14] europe-west4
+ [15] europe-west6
+ [16] northamerica-northeast1
+ [17] southamerica-east1
+ [18] us-central1
+ [19] us-east1
+ [20] us-east4
+ [21] us-west1
+ [22] cancel
+Please enter your numeric choice: 
+```
+
+Si te encuentras en México probablemente te convenga elegir la opción "18". Debes ingresar la opción deseada y presionar enter para continuar
+
+```
+Please enter your numeric choice:  18
+```
+
+Tras finalizar esta configuración te deberá aparecer el siguiente mensaje:
+
+```
+Deploying container to Cloud Run service [<service-name>] in project [<project-id>] region [us-central1]
+✓ Deploying... Done.                                                           
+  ✓ Creating Revision...                    
+  ✓ Routing traffic...
+Done.
+Service [<service-name>] revision [<revision-id>] has been deployed and is serving 100 percent of traffic.
+Service URL: https://<service-url>
+```
+
+El Service URL es el que ocuparemos para realizar las pruebas end-to-end de la siguiente fase.
 
 ### Analice las pruebas end-to-end 🔩
 
