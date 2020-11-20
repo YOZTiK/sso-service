@@ -3,6 +3,7 @@ gunicorn==19.3.0
 Flask-Jsonpify
 google-api-python-client
 google-cloud-firestore
+google-cloud-logging
 firebase-admin
 grpcio
 requests
