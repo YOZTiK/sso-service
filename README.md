@@ -155,11 +155,14 @@ Mira [Service Documentation](https://documenter.getpostman.com/view/10987523/TVe
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Las herramientas usadas para crear este proyecto_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Pycharm](https://www.jetbrains.com/es-es/pycharm/) - El IDE usado
+* [Python3](https://docs.python.org/3/) - El framework usado
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - El framework usado para el despliegue web
+* [Git](https://git-scm.com/doc) - Usado para manejar el versionamiento
+
+También puedes mirar la lista de todos los [requisitos](requirements.txt) de este proyecto.
 
 ## Contribuyendo 🖇️
 
@@ -167,7 +170,7 @@ Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) 
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+_Este proyecto fue creado desde sus inicios por:_
 
 * **Yoltic Cervantes Galeana** - *Trabajo Inicial y Documentación* - [YOZTiK](https://github.com/YOZTiK)
 * **Luis Angel Diaz Rebollo** - *Diseño de DB y Documentación del Servicio* - [LuisADR18](#)
