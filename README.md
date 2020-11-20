@@ -173,7 +173,7 @@ Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) 
 _Este proyecto fue creado desde sus inicios por:_
 
 * **Yoltic Cervantes Galeana** - *Trabajo Inicial y Documentación* - [YOZTiK](https://github.com/YOZTiK)
-* **Luis Angel Diaz Rebollo** - *Diseño de DB y Documentación del Servicio* - [LuisADR18](#)
+* **Luis Angel Diaz Rebollo** - *Diseño de DB y Documentación del Servicio* - [LuisADR18](https://github.com/LuisADR)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/YOZTiK/sso-service/contributors) quíenes han participado en este proyecto. 
 
